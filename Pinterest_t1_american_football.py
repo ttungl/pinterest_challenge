@@ -22,9 +22,8 @@ The RGB values of white are (255, 255, 255)
 
 Solution:
 --
-
+# OpenCV lib 
 import cv2
-import matplotlib.pyplot as plt
 
 picture = 'american_football_formation.png'
 
