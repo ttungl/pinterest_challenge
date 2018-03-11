@@ -28,7 +28,7 @@ import cv2
 picture = 'american_football_formation.png'
 
 def count_objects(self, picture):
-	img = cv2.imread()
+	img = cv2.imread(picture)
 	gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 	ret, thresh = cv2.threshold(gray, 127, 255, 1)
 	contours, hierarchy = cv2.findContours(thresh.copy(), cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
