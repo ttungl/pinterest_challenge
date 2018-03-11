@@ -71,8 +71,7 @@ def rate_limit_traffic(log_path):
 
 	for i in range(0, size):
 		request_ip_ts_tuple = request_ip_ts[i] # tuple: (request_id, remote_ip_addr, time_stamps)
-		# print(request_ip_ts_tuple)
-
+		
 		request_id, remote_ip_addr, time_stamps = request_ip_ts_tuple[0], request_ip_ts_tuple[1], request_ip_ts_tuple[2]
 
 		if remote_ip_addr not in ip_ts_map: # remote_ip_addr not in map
